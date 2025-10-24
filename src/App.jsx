@@ -7,8 +7,10 @@ import Gallery from './components/Gallery'
 const App = () => {
   return (
     <>
-    <ProfileTabs/>
-    <Gallery/>
+      <div className='flex items-center justify-center flex-col gap-7  py-5'>
+        <ProfileTabs />
+        <Gallery />
+      </div>
     </>
   )
 }

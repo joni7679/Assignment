@@ -13,8 +13,7 @@ const ProfileTabs = () => {
 
   return (
     <>
-      <div className="w-full flex justify-center py-10 ">
-
+      <div className="w-full flex justify-center">
         <div className="bg-[#4a4e54] p-6 rounded-[19px] shadow-lg  w-[45rem] h-[300px] flex items-center  flex-col relative">
           <CircleQuestionMark color="#fff" className="absolute  left-[13px] top-[7%]" />
           <LayoutGrid color="#8e8e90" strokeWidth={1} className="absolute left-[13px] top-[40%]"/>

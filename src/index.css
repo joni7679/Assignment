@@ -93,3 +93,12 @@ body {
         -5px -3px 30px -10px #98BEF7;
     background: #9AB0C4;
 }
+
+.gallery-img {
+    filter: grayscale(100%);
+    transition: 0.5s ease;
+}
+
+.gallery-img:hover {
+    filter: grayscale(0%);
+}

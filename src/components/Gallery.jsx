@@ -1,5 +1,5 @@
 import React from "react";
-import { Plus, ArrowLeft, ArrowRight } from "lucide-react";
+import { Plus, ArrowLeft, ArrowRight, CircleQuestionMark, LayoutGrid } from "lucide-react";
 
 const Gallery = () => {
     // gallery-sectin img here
@@ -34,8 +34,10 @@ const Gallery = () => {
         },
     ]
     return (
-        <div className="flex items-center w-full justify-center py-10">
-            <div className="w-[720px] h-[330px] bg-[#363C43] rounded-[18.89px] p-6 flex flex-col">
+        <div className="flex items-center w-full justify-center">
+            <div className="w-[720px] h-[330px] bg-[#363C43] rounded-[18.89px] py-3 px-11 flex flex-col relative">
+                <CircleQuestionMark color="#fff" className="absolute  left-[13px] top-[7%]" />
+                <LayoutGrid color="#8e8e90" strokeWidth={1} className="absolute left-[13px] top-[40%]" />
                 <div className="top-bar flex items-center justify-between mb-6">
                     <button className="text-white font-[Poppins] flex items-center justify-center gap-4 bg-[#171717] p-3 rounded-[20px] w-[149px] h-[62px] ">
                         Gallery
@@ -58,7 +60,7 @@ const Gallery = () => {
                     {galleryImg.map((img, index) => {
                         return (
                             <div key={index} className="shrink-0 w-[190px] h-[179px] rounded-[24px] bg-red-700 overflow-hidden">
-                                <img className="w-full h-full object-cover" src={img.Image} alt="" />
+                                <img className="w-full h-full object-cover gallery-img" src={img.Image} alt="" />
                             </div>
                         )
                     })}
