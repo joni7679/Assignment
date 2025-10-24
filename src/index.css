@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: poppins;
+    src: url("./assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: plusJakartaSans;
+    src: url("./assets/fonts/PlusJakartaSans[wght].ttf");
+}
+
+body {
+    background: linear-gradient(#373E44 0%, #1B1D21 100%, #191B1F 100%);
+    width: 100%;
+    height: 100vh;
+}
+
+.question-mark {
+    background: linear-gradient(90deg, #4A4E54 0%, #A3ADBA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.btn-group {
+    box-shadow: inset 0px 4.96px 12.4px 2.48px rgba(0, 0, 0, 0.25);
+}
+
+.activebutton {
+    background: #28282F;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.btn {
+    width: 12.188em;
+    height: 3.063em;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.btn::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #202021;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: 0.5s all ease;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    transform: translateX(0%);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #888989 0%, #4A4E54 100%);
+    border-radius: 8px;
+    min-height: 64px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
