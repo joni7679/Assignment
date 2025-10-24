@@ -14,7 +14,7 @@ const ProfileTabs = () => {
   return (
     <>
       <div className="w-full flex justify-center">
-        <div className="bg-[#4a4e54] p-6 rounded-[19px] shadow-lg  w-[45rem] h-[300px] flex items-center  flex-col relative">
+        <div className="bg-[#363C43] tabs p-6 rounded-[19px] shadow-lg  w-[45rem] h-[300px] flex items-center  flex-col relative">
           <CircleQuestionMark color="#fff" className="absolute  left-[13px] top-[7%]" />
           <LayoutGrid color="#8e8e90" strokeWidth={1} className="absolute left-[13px] top-[40%]"/>
           <div className="btn-group flex items-center gap-4 bg-[#171717] p-3 rounded-[1.438em] w-[38.375em] h-[3.875em] mb-6">

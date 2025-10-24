@@ -35,7 +35,7 @@ const Gallery = () => {
     ]
     return (
         <div className="flex items-center w-full justify-center">
-            <div className="w-[720px] h-[330px] bg-[#363C43] rounded-[18.89px] py-3 px-11 flex flex-col relative">
+            <div className="gallery-part w-[720px] h-[330px] bg-[#363C43] rounded-[18.89px] py-3 px-11 flex flex-col relative">
                 <CircleQuestionMark color="#fff" className="absolute  left-[13px] top-[7%]" />
                 <LayoutGrid color="#8e8e90" strokeWidth={1} className="absolute left-[13px] top-[40%]" />
                 <div className="top-bar flex items-center justify-between mb-6">

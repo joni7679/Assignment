@@ -15,6 +15,10 @@ body {
     width: 100%;
 }
 
+.tabs {
+    box-shadow: 5.67px 5.67px 3.78px rgba(0, 0, 0, 0.4);
+}
+
 .question-mark {
     background: linear-gradient(90deg, #4A4E54 0%, #A3ADBA 100%);
     -webkit-background-clip: text;
@@ -69,6 +73,11 @@ body {
 
 .custom-scrollbar::-webkit-scrollbar-track {
     background: transparent;
+}
+
+.gallery-part {
+    box-shadow: 5.67px 5.67px 3.78px rgba(0, 0, 0, 0.4);
+
 }
 
 .add-img-btn {
