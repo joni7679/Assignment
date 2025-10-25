@@ -34,39 +34,43 @@ const Gallery = () => {
         },
     ]
     return (
-        <div className="flex items-center w-full justify-center">
-            <div className="gallery-part w-[720px] h-[330px] bg-[#363C43] rounded-[18.89px] py-3 px-11 flex flex-col relative">
-                <CircleQuestionMark color="#fff" className="absolute  left-[13px] top-[7%]" />
-                <LayoutGrid color="#8e8e90" strokeWidth={1} className="absolute left-[13px] top-[40%]" />
-                <div className="top-bar flex items-center justify-between mb-6">
-                    <button className="text-white font-[Poppins] flex items-center justify-center gap-4 bg-[#171717] p-3 rounded-[20px] w-[149px] h-[62px] ">
-                        Gallery
-                    </button>
-                    <div className="flex items-center gap-3">
-                        <button className="add-img-btn bg-[#3A3B3E] w-[131px] h-[46px] rounded-[104px] text-white text-sm flex items-center justify-center gap-2 px-3">
-                            <Plus size={16} /> ADD IMAGE
+        <>
+            <div className="flex items-center w-full justify-center">
+                <div className="gallery-part w-[45em] h-[330px] bg-[#363C43] rounded-[18.89px] py-3  px-11 flex flex-col relative overflow-hidden   ">
+                    <CircleQuestionMark color="#fff" className="absolute  left-[13px] top-[7%]" />
+                    <LayoutGrid color="#8e8e90" strokeWidth={1} className="absolute left-[13px] top-[40%]" />
+                    <div className="top-bar flex items-center justify-between mb-6">
+                        <button className="text-white font-[Poppins] flex items-center justify-center gap-4 bg-[#171717] p-3 rounded-[20px] w-[149px] h-[62px] ">
+                            Gallery
                         </button>
-                        <div className="flex gap-2">
-                            <button className="icon w-[45px] h-[45px] flex items-center justify-center rounded-full">
-                                <ArrowLeft size={16} color="#fff" />
+                        <div className="flex items-center gap-3">
+                            <button className="font-[plusJakartaSans] add-img-btn bg-[#3A3B3E] w-[131px] h-[46px] rounded-[104px] text-white text-sm flex items-center justify-center gap-2 px-3">
+                                <Plus size={16} /> ADD IMAGE
                             </button>
-                            <button className="icon w-[45px] h-[45px] flex items-center justify-center rounded-full">
-                                <ArrowRight size={16} color="#fff" />
-                            </button>
+                            <div className="flex gap-2">
+                                <button className="icon w-[45px] h-[45px] flex items-center justify-center rounded-full ">
+                                    <ArrowLeft size={16} className="text-[#404040] hover:text-white" />
+                                </button>
+                                <button className="icon w-[45px] h-[45px] flex items-center justify-center rounded-full ">
+                                    <ArrowRight size={16} className="text-[#404040] hover:text-white" />
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="gallery-section flex items-center gap-5 w-full overflow-hidden">
-                    {galleryImg.map((img, index) => {
-                        return (
-                            <div key={index} className="shrink-0 w-[190px] h-[179px] rounded-[24px] bg-red-700 overflow-hidden">
-                                <img className="w-full h-full object-cover gallery-img" src={img.Image} alt="" />
-                            </div>
-                        )
-                    })}
+                    <div className="gallery-section flex items-center gap-2 px-3 w-full overflow-hidden py-5">
+                        {galleryImg.map((img, index) => {
+                            return (
+                                <>
+                                    <div key={index} className="shrink-0 w-[190px] h-[179px] rounded-[24px] gallery-img-box overflow-hidden">
+                                        <img className="w-full h-full object-cover gallery-img" src={img.Image} alt="" />
+                                    </div>
+                                </>
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
