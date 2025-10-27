@@ -13,7 +13,6 @@ export const tabs = [
         label: "Experiences",
         content: `Frontend Intern at CollegTips.in — Worked on real-world UI/UX projects, improving performance 
     and adding interactive animations with React.js and GSAP.
-    
     Freelance Projects — Built multiple client-based websites including an Education Platform, 
     YouTube Clone, Spotify Clone, and a Significo Clone, focusing on responsive layouts and smooth user experience.
     `
