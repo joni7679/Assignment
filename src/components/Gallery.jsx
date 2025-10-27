@@ -22,9 +22,7 @@ const Gallery = () => {
         {
             Image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
         },
-        {
-            Image: "hhttps://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
-        },
+       
         {
             Image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1174"
         },
@@ -43,10 +41,8 @@ const Gallery = () => {
         if (file) {
             const imgUrl = URL.createObjectURL(file);
             setGalleryImg((prev) => [...prev, { Image: imgUrl }])
-            
         }
     }
-
 
     const nextImage = () => {
         if (swiperRef.current) {
@@ -76,7 +72,7 @@ const Gallery = () => {
                         </button>
                         <div className="flex items-center gap-3">
                             <button className="flex items-center font-[plusJakartaSans] add-img-btn bg-[#3A3B3E] w-[131px] h-[46px] rounded-[104px] text-white text-sm flex items-center justify-center gap-2 px-3">
-                                <label htmlFor="file"><Plus size={16} /> ADD IMAGE</label>
+                                <label className="flex items-center gap-0.5" htmlFor="file"><Plus size={16} /> ADD IMAGE</label>
                                 <input type="file" id="file" hidden onChange={handlefileUpload} />
                             </button>
                             <div className="flex gap-2">
